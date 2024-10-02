@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Prueba de Select </title>
+    </head>
+    <body>
+        <h1> Productos </h1>
+        <ul>
+            {% for x in productos %}
+            <li>{{ x.nombre }} {{  x.categoria }} {{  x.precio }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
