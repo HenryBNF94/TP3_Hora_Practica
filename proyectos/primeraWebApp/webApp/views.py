@@ -1,13 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
 from django.template import loader
 from .models import Producto
 
 # Create your views here.
 
 def hola(request):
-    template = loader.get_template(inicio.html)
+    template = loader.get_template('inicio.html')
     return HttpResponse(template.render())
 
 def productos(request):
